@@ -7,7 +7,7 @@ const Main = () => {
 	return (
 		<div className="grid grid-cols-6">
 			<SideBar />
-			<div className="main-content">
+			<div className="main-content relative col-span-5">
 				<Outlet />
 			</div>
 		</div>

@@ -1,11 +1,16 @@
 import Usermenu from '../components/Usermenu/Usermenu'
 
-const Header = () => {
+const Header = (props) => {
+	
+	const { pageTitle } = props
+	
 	return (
-		<header>
-			<div>
-				Header
-				Usermenu
+		<header className="absolute w-full">
+			<div className="flex mx-auto px-8 py-4">
+				<span className="mr-auto">
+					{pageTitle}
+				</span>
+				<Usermenu />
 			</div>
 		</header>
 	)
